@@ -100,6 +100,7 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 .nav-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:#ccc;transition:background .15s}
 .nav-card:hover{border-color:#aaa;background:#fff}
 .nav-card:hover::before{background:#111}
+.nav-card-img{height:72px;background:#e0e0e0;border-radius:2px;margin-bottom:10px}
 .nav-card-eyebrow{font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#aaa;margin-bottom:4px}
 .nav-card-title{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13.5px;font-weight:600;color:#111;margin-bottom:4px;line-height:1.3}
 .nav-card-desc{font-size:11.5px;color:#888;line-height:1.5}
@@ -178,6 +179,7 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 
 <!-- Utility bar -->
 <div class="util-bar">
+  <a href="#">Donate</a><span class="util-sep">|</span>
   <a href="#">GoVo Platform</a><span class="util-sep">|</span>
   <a href="#">My RVS</a><span class="util-sep">|</span>
   <a href="#">Virtual Village Hall</a>
@@ -193,72 +195,9 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 
     <div class="primary-links">
 
-      <!-- VOLUNTEER -->
-      <div class="nav-item" data-menu="volunteer">
-        <button class="nav-trigger">Volunteer<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-        <div class="mega-menu wide">
-          <div class="mega-inner">
-            <div class="mega-sidebar">
-              <div class="mega-sidebar-label">How to Volunteer</div>
-              <button class="sidebar-link active-sub" data-sub="v-why"><span>Why and How to Volunteer</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-              <button class="sidebar-link" data-sub="v-types"><span>Volunteering Opportunities</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-              <button class="sidebar-link" data-sub="v-stories"><span>Volunteer Stories</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-            </div>
-            <div class="mega-content">
-              <div class="mega-section vis" id="v-why">
-                <div class="mega-cols mega-cols-2">
-                  <div>
-                    <div class="col-label">Why and How to Volunteer</div>
-                    <a href="#" class="sub-link"><strong>Volunteering Overview</strong></a>
-                    <a href="#" class="sub-link"><strong>Why Volunteer</strong></a>
-                    <a href="#" class="sub-link"><strong>FAQs</strong></a>
-                    <a href="#" class="sub-link"><strong>GoVo Platform</strong></a>
-                  </div>
-                  <div>
-                    <div class="col-label">Why Volunteer</div>
-                    <a href="#" class="sub-link"><strong>Benefits of Volunteering</strong></a>
-                    <a href="#" class="sub-link"><strong>What to Expect</strong></a>
-                    <a href="#" class="sub-link"><strong>Impact of Volunteering</strong></a>
-                  </div>
-                </div>
-                <div class="mega-cards">
-                  <div class="cards-label">Featured</div>
-                  <div class="cards-row">
-                    <a href="#" class="nav-card">
-                      <div class="nav-card-eyebrow">Get Started</div>
-                      <div class="nav-card-title">Find a Volunteering Role Near You</div>
-                      <div class="nav-card-desc">Search for opportunities in your area and start making a difference today.</div>
-                      <div class="nav-card-arrow">Find a role<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
-                    </a>
-                    <a href="#" class="nav-card">
-                      <div class="nav-card-eyebrow">Volunteer Stories</div>
-                      <div class="nav-card-title">Hear from Our Volunteers</div>
-                      <div class="nav-card-desc">Read stories from the people who make our work possible across the UK.</div>
-                      <div class="nav-card-arrow">Read stories<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="mega-section" id="v-types">
-                <div class="col-label">Volunteering Opportunities</div>
-                <a href="#" class="sub-link"><strong>In Hospitals</strong></a>
-                <a href="#" class="sub-link"><strong>In the Community</strong></a>
-                <a href="#" class="sub-link"><strong>Through Your Employer</strong></a>
-                <a href="#" class="sub-link"><strong>Students and Young Adults</strong></a>
-                <a href="#" class="sub-link"><strong>Playing My Part Hub</strong></a>
-              </div>
-              <div class="mega-section" id="v-stories">
-                <div class="col-label">Volunteer Stories</div>
-                <a href="#" class="sub-link"><strong>14 Individual Volunteer Stories</strong></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- GET HELP & SUPPORT -->
+      <!-- FIND HELP AND SUPPORT -->
       <div class="nav-item" data-menu="help">
-        <button class="nav-trigger">Get Help &amp; Support<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+        <button class="nav-trigger">Find Help and Support<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
         <div class="mega-menu wide">
           <div class="mega-inner">
             <div class="mega-sidebar">
@@ -284,12 +223,14 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
                   <div class="cards-label">Featured</div>
                   <div class="cards-row">
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Impact Content</div>
                       <div class="nav-card-title">How we're changing lives at home</div>
                       <div class="nav-card-desc">Read stories of people supported by our at-home services across the UK.</div>
                       <div class="nav-card-arrow">Read more<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                     </a>
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Helpful Link</div>
                       <div class="nav-card-title">Health and Wellbeing Guides</div>
                       <div class="nav-card-desc">Browse our free guides designed to support your independence and wellbeing.</div>
@@ -327,6 +268,67 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
         </div>
       </div>
 
+      <!-- VOLUNTEER -->
+      <div class="nav-item" data-menu="volunteer">
+        <button class="nav-trigger">Volunteer<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+        <div class="mega-menu wide">
+          <div class="mega-inner">
+            <div class="mega-sidebar">
+              <div class="mega-sidebar-label">How to Volunteer</div>
+              <button class="sidebar-link active-sub" data-sub="v-why"><span>Why and How to Volunteer</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
+              <a href="#" class="sidebar-link"><span>In Hospitals</span></a>
+              <a href="#" class="sidebar-link"><span>In the Community</span></a>
+              <a href="#" class="sidebar-link"><span>Through Your Employer</span></a>
+              <a href="#" class="sidebar-link"><span>Students and Young Adults</span></a>
+              <button class="sidebar-link" data-sub="v-stories"><span>Volunteer Stories</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
+            </div>
+            <div class="mega-content">
+              <div class="mega-section vis" id="v-why">
+                <div class="mega-cols mega-cols-2">
+                  <div>
+                    <div class="col-label">Why and How to Volunteer</div>
+                    <a href="#" class="sub-link"><strong>Volunteering Overview</strong></a>
+                    <a href="#" class="sub-link"><strong>Why Volunteer</strong></a>
+                    <a href="#" class="sub-link"><strong>FAQs</strong></a>
+                    <a href="#" class="sub-link"><strong>GoVo Platform</strong></a>
+                  </div>
+                  <div>
+                    <div class="col-label">Why Volunteer</div>
+                    <a href="#" class="sub-link"><strong>Benefits of Volunteering</strong></a>
+                    <a href="#" class="sub-link"><strong>What to Expect</strong></a>
+                    <a href="#" class="sub-link"><strong>Impact of Volunteering</strong></a>
+                  </div>
+                </div>
+                <div class="mega-cards">
+                  <div class="cards-label">Featured</div>
+                  <div class="cards-row">
+                    <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
+                      <div class="nav-card-eyebrow">Get Started</div>
+                      <div class="nav-card-title">Find a Volunteering Role Near You</div>
+                      <div class="nav-card-desc">Search for opportunities in your area and start making a difference today.</div>
+                      <div class="nav-card-arrow">Find a role<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
+                    </a>
+                    <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
+                      <div class="nav-card-eyebrow">Volunteer Stories</div>
+                      <div class="nav-card-title">Hear from Our Volunteers</div>
+                      <div class="nav-card-desc">Read stories from the people who make our work possible across the UK.</div>
+                      <div class="nav-card-arrow">Read stories<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mega-section" id="v-stories">
+                <div class="col-label">Volunteer Stories</div>
+                <a href="#" class="sub-link"><strong>Playing My Part Hub</strong></a>
+                <a href="#" class="sub-link"><strong>14 Individual Volunteer Stories</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- GET INVOLVED -->
       <div class="nav-item" data-menu="fundraise">
         <button class="nav-trigger">Get Involved<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
@@ -335,7 +337,7 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
             <div class="mega-sidebar">
               <div class="mega-sidebar-label">Ways to Give</div>
               <button class="sidebar-link active-sub" data-sub="f-donate"><span>Make a Donation</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-              <button class="sidebar-link" data-sub="f-lottery"><span>Weekly Lottery</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
+              <a href="#" class="sidebar-link"><span>Play our Lottery</span></a>
               <button class="sidebar-link" data-sub="f-legacy"><span>Leave a Legacy Gift</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
               <button class="sidebar-link" data-sub="f-memory"><span>Donate in Memory</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
               <button class="sidebar-link" data-sub="f-us"><span>Fundraise for Us</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
@@ -352,39 +354,18 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
                   <div class="cards-label">Featured</div>
                   <div class="cards-row">
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Current Appeal</div>
                       <div class="nav-card-title">Support Our Winter Appeal</div>
                       <div class="nav-card-desc">Your donation helps us reach more people who need vital support this winter.</div>
                       <div class="nav-card-arrow">Donate now<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                     </a>
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Fundraising</div>
                       <div class="nav-card-title">Take on a Challenge for RVS</div>
                       <div class="nav-card-desc">From step challenges to vintage tea parties — find a way to fundraise that suits you.</div>
                       <div class="nav-card-arrow">Start fundraising<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="mega-section" id="f-lottery">
-                <div class="col-label">Weekly Lottery</div>
-                <a href="#" class="sub-link"><strong>Enter the Weekly Lottery</strong></a>
-                <a href="#" class="sub-link"><strong>How It Works</strong></a>
-                <a href="#" class="sub-link"><strong>Past Winners</strong></a>
-                <div class="mega-cards">
-                  <div class="cards-label">Featured</div>
-                  <div class="cards-row">
-                    <a href="#" class="nav-card">
-                      <div class="nav-card-eyebrow">Win &amp; Give</div>
-                      <div class="nav-card-title">Play the Weekly Lottery</div>
-                      <div class="nav-card-desc">Just £1 a week could win you a prize and help fund vital services for older people.</div>
-                      <div class="nav-card-arrow">Enter now<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
-                    </a>
-                    <a href="#" class="nav-card">
-                      <div class="nav-card-eyebrow">Your Impact</div>
-                      <div class="nav-card-title">Where Your Lottery Money Goes</div>
-                      <div class="nav-card-desc">Every ticket sold helps fund the services that make a real difference to older people.</div>
-                      <div class="nav-card-arrow">See the impact<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                     </a>
                   </div>
                 </div>
@@ -438,12 +419,14 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
                   <div class="cards-label">Featured</div>
                   <div class="cards-row">
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Case Study</div>
                       <div class="nav-card-title">How MG Partnered with RVS</div>
                       <div class="nav-card-desc">Discover how corporate partnerships with RVS create real community impact.</div>
                       <div class="nav-card-arrow">Read case study<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                     </a>
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Get in Touch</div>
                       <div class="nav-card-title">Start a Partnership Conversation</div>
                       <div class="nav-card-desc">Find out how your organisation can work with RVS to support communities.</div>
@@ -490,12 +473,14 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
               <div class="cards-label">Featured</div>
               <div class="cards-row">
                 <a href="#" class="nav-card">
+                  <div class="nav-card-img"></div>
                   <div class="nav-card-eyebrow">Coffee</div>
                   <div class="nav-card-title">1938 Coffee — Good Coffee, Great Cause</div>
                   <div class="nav-card-desc">Our speciality coffee brand bringing quality and community together.</div>
                   <div class="nav-card-arrow">Discover 1938<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                 </a>
                 <a href="#" class="nav-card">
+                  <div class="nav-card-img"></div>
                   <div class="nav-card-eyebrow">Opportunities</div>
                   <div class="nav-card-title">New Retail and Café Opportunities</div>
                   <div class="nav-card-desc">Explore how your site or hospital could host an RVS retail or café outlet.</div>
@@ -532,12 +517,14 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
                   <div class="cards-label">Featured</div>
                   <div class="cards-row">
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Our Heritage</div>
                       <div class="nav-card-title">85 Years of Serving Communities</div>
                       <div class="nav-card-desc">Explore our history from wartime roots to the vital services we provide today.</div>
                       <div class="nav-card-arrow">Our history<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                     </a>
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Meet Our Patron</div>
                       <div class="nav-card-title">HRH The Princess Royal</div>
                       <div class="nav-card-desc">Learn about the role our Royal Patron plays in supporting our mission.</div>
@@ -578,12 +565,14 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
                   <div class="cards-label">Featured</div>
                   <div class="cards-row">
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Impact Content</div>
                       <div class="nav-card-title">Our Annual Impact Report</div>
                       <div class="nav-card-desc">See the difference our volunteers and staff made across the UK this year.</div>
                       <div class="nav-card-arrow">View report<svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></div>
                     </a>
                     <a href="#" class="nav-card">
+                      <div class="nav-card-img"></div>
                       <div class="nav-card-eyebrow">Helpful Link</div>
                       <div class="nav-card-title">Charity Reporting &amp; Governance</div>
                       <div class="nav-card-desc">Access our published accounts, trustees' reports and governance documents.</div>
@@ -598,6 +587,49 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
                 <a href="#" class="sub-link"><strong>Vision, Mission and Values</strong></a>
                 <a href="#" class="sub-link"><strong>Supporting You</strong></a>
                 <a href="#" class="sub-link"><strong>Charter for Employers</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UTILITY AND LEGAL -->
+      <div class="nav-item" data-menu="utility">
+        <button class="nav-trigger">Utility and Legal<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+        <div class="mega-menu wide">
+          <div class="mega-inner">
+            <div class="mega-sidebar">
+              <div class="mega-sidebar-label">Legal &amp; Contact</div>
+              <button class="sidebar-link active-sub" data-sub="u-contact"><span>Contact Us</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
+              <button class="sidebar-link" data-sub="u-policies"><span>Policies and Privacy</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
+              <button class="sidebar-link" data-sub="u-terms"><span>Website Terms</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
+            </div>
+            <div class="mega-content">
+              <div class="mega-section vis" id="u-contact">
+                <div class="col-label">Contact Us</div>
+                <a href="#" class="sub-link"><strong>Contact Hub</strong></a>
+                <a href="#" class="sub-link"><strong>General Enquiry Form</strong></a>
+                <a href="#" class="sub-link"><strong>Data Protection Enquiry</strong></a>
+                <a href="#" class="sub-link"><strong>Website Enquiry</strong></a>
+                <a href="#" class="sub-link"><strong>Caldicott Guardian Enquiry</strong></a>
+                <a href="#" class="sub-link"><strong>Newsletter Sign-Up</strong></a>
+              </div>
+              <div class="mega-section" id="u-policies">
+                <div class="col-label">Policies and Privacy</div>
+                <a href="#" class="sub-link"><strong>Privacy Notices ×5</strong></a>
+                <a href="#" class="sub-link"><strong>Cookie Notice</strong></a>
+                <a href="#" class="sub-link"><strong>Data Protection</strong></a>
+                <a href="#" class="sub-link"><strong>Safeguarding Policy</strong></a>
+                <a href="#" class="sub-link"><strong>Complaints and Comments</strong></a>
+                <a href="#" class="sub-link"><strong>Welsh Language Standards</strong></a>
+                <a href="#" class="sub-link"><strong>Modern Slavery Statement</strong></a>
+              </div>
+              <div class="mega-section" id="u-terms">
+                <div class="col-label">Website Terms</div>
+                <a href="#" class="sub-link"><strong>Website Terms and Acceptable Use</strong></a>
+                <a href="#" class="sub-link"><strong>Virtual Village Hall Terms</strong></a>
+                <a href="#" class="sub-link"><strong>Image Licence Agreement</strong></a>
+                <a href="#" class="sub-link"><strong>Sitemap</strong></a>
               </div>
             </div>
           </div>
@@ -637,50 +669,9 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 
   <ul class="mob-nav">
 
-    <!-- L1: VOLUNTEER -->
+    <!-- L1: FIND HELP AND SUPPORT -->
     <li class="mob-item">
-      <button class="mob-trigger"><span>Volunteer</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-      <div class="mob-panel">
-        <ul style="list-style:none">
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Why and How to Volunteer</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">Volunteering Overview</a>
-              <a href="#" class="mob-l3-link">Why Volunteer</a>
-              <a href="#" class="mob-l3-link">FAQs</a>
-              <a href="#" class="mob-l3-link">GoVo Platform</a>
-              <a href="#" class="mob-l3-link">Benefits of Volunteering</a>
-              <a href="#" class="mob-l3-link">What to Expect</a>
-              <a href="#" class="mob-l3-link">Impact of Volunteering</a>
-            </div>
-          </li>
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Volunteering Opportunities</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">In Hospitals</a>
-              <a href="#" class="mob-l3-link">In the Community</a>
-              <a href="#" class="mob-l3-link">Through Your Employer</a>
-              <a href="#" class="mob-l3-link">Students and Young Adults</a>
-              <a href="#" class="mob-l3-link">Playing My Part Hub</a>
-            </div>
-          </li>
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Volunteer Stories</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">14 Individual Volunteer Stories</a>
-            </div>
-          </li>
-        </ul>
-        <div class="mob-cards">
-          <a href="#" class="mob-card"><div class="mob-card-eyebrow">Get Started</div><div class="mob-card-title">Find a Volunteering Role Near You</div></a>
-          <a href="#" class="mob-card"><div class="mob-card-eyebrow">Volunteer Stories</div><div class="mob-card-title">Hear from Our Volunteers</div></a>
-        </div>
-      </div>
-    </li>
-
-    <!-- L1: GET HELP & SUPPORT -->
-    <li class="mob-item">
-      <button class="mob-trigger"><span>Get Help &amp; Support</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+      <button class="mob-trigger"><span>Find Help and Support</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
       <div class="mob-panel">
         <ul style="list-style:none">
           <li class="mob-l2-item">
@@ -732,6 +723,42 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
       </div>
     </li>
 
+    <!-- L1: VOLUNTEER -->
+    <li class="mob-item">
+      <button class="mob-trigger"><span>Volunteer</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+      <div class="mob-panel">
+        <ul style="list-style:none">
+          <li class="mob-l2-item">
+            <button class="mob-l2-trigger"><span>Why and How to Volunteer</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+            <div class="mob-l2-panel">
+              <a href="#" class="mob-l3-link">Volunteering Overview</a>
+              <a href="#" class="mob-l3-link">Why Volunteer</a>
+              <a href="#" class="mob-l3-link">FAQs</a>
+              <a href="#" class="mob-l3-link">GoVo Platform</a>
+              <a href="#" class="mob-l3-link">Benefits of Volunteering</a>
+              <a href="#" class="mob-l3-link">What to Expect</a>
+              <a href="#" class="mob-l3-link">Impact of Volunteering</a>
+            </div>
+          </li>
+          <li><a href="#" class="mob-l3-link">In Hospitals</a></li>
+          <li><a href="#" class="mob-l3-link">In the Community</a></li>
+          <li><a href="#" class="mob-l3-link">Through Your Employer</a></li>
+          <li><a href="#" class="mob-l3-link">Students and Young Adults</a></li>
+          <li class="mob-l2-item">
+            <button class="mob-l2-trigger"><span>Volunteer Stories</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+            <div class="mob-l2-panel">
+              <a href="#" class="mob-l3-link">Playing My Part Hub</a>
+              <a href="#" class="mob-l3-link">14 Individual Volunteer Stories</a>
+            </div>
+          </li>
+        </ul>
+        <div class="mob-cards">
+          <a href="#" class="mob-card"><div class="mob-card-eyebrow">Get Started</div><div class="mob-card-title">Find a Volunteering Role Near You</div></a>
+          <a href="#" class="mob-card"><div class="mob-card-eyebrow">Volunteer Stories</div><div class="mob-card-title">Hear from Our Volunteers</div></a>
+        </div>
+      </div>
+    </li>
+
     <!-- L1: GET INVOLVED -->
     <li class="mob-item">
       <button class="mob-trigger"><span>Get Involved</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
@@ -747,14 +774,7 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
               <a href="#" class="mob-l3-link">Impact of Your Donations</a>
             </div>
           </li>
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Weekly Lottery</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">Enter the Weekly Lottery</a>
-              <a href="#" class="mob-l3-link">How It Works</a>
-              <a href="#" class="mob-l3-link">Past Winners</a>
-            </div>
-          </li>
+          <li><a href="#" class="mob-l3-link">Play our Lottery</a></li>
           <li class="mob-l2-item">
             <button class="mob-l2-trigger"><span>Leave a Legacy Gift</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
             <div class="mob-l2-panel">
@@ -922,12 +942,54 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
       </div>
     </li>
 
+    <!-- L1: UTILITY AND LEGAL -->
+    <li class="mob-item">
+      <button class="mob-trigger"><span>Utility and Legal</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+      <div class="mob-panel">
+        <ul style="list-style:none">
+          <li class="mob-l2-item">
+            <button class="mob-l2-trigger"><span>Contact Us</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+            <div class="mob-l2-panel">
+              <a href="#" class="mob-l3-link">Contact Hub</a>
+              <a href="#" class="mob-l3-link">General Enquiry Form</a>
+              <a href="#" class="mob-l3-link">Data Protection Enquiry</a>
+              <a href="#" class="mob-l3-link">Website Enquiry</a>
+              <a href="#" class="mob-l3-link">Caldicott Guardian Enquiry</a>
+              <a href="#" class="mob-l3-link">Newsletter Sign-Up</a>
+            </div>
+          </li>
+          <li class="mob-l2-item">
+            <button class="mob-l2-trigger"><span>Policies and Privacy</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+            <div class="mob-l2-panel">
+              <a href="#" class="mob-l3-link">Privacy Notices ×5</a>
+              <a href="#" class="mob-l3-link">Cookie Notice</a>
+              <a href="#" class="mob-l3-link">Data Protection</a>
+              <a href="#" class="mob-l3-link">Safeguarding Policy</a>
+              <a href="#" class="mob-l3-link">Complaints and Comments</a>
+              <a href="#" class="mob-l3-link">Welsh Language Standards</a>
+              <a href="#" class="mob-l3-link">Modern Slavery Statement</a>
+            </div>
+          </li>
+          <li class="mob-l2-item">
+            <button class="mob-l2-trigger"><span>Website Terms</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
+            <div class="mob-l2-panel">
+              <a href="#" class="mob-l3-link">Website Terms and Acceptable Use</a>
+              <a href="#" class="mob-l3-link">Virtual Village Hall Terms</a>
+              <a href="#" class="mob-l3-link">Image Licence Agreement</a>
+              <a href="#" class="mob-l3-link">Sitemap</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+
   </ul>
 
   <div class="mob-utils">
+    <a href="#" class="mob-util-link">Donate</a>
     <a href="#" class="mob-util-link">GoVo Platform</a>
     <a href="#" class="mob-util-link">My RVS</a>
-    <a href="#" class="mob-util-link">Sitemap</a>
+    <a href="#" class="mob-util-link">Virtual Village Hall</a>
   </div>
 </div>
 
@@ -1057,5 +1119,87 @@ document.querySelectorAll('.mob-l2-trigger').forEach(t => {
   });
 });
 </script>
+
+<script>
+/* ── COLOUR ROW SCROLL ANIMATION ── */
+document.addEventListener('DOMContentLoaded', function(){
+  var row = document.getElementById('colour-row');
+  var red = document.getElementById('shape-red');
+  if (!row || !red) return;
+
+  function update(){
+    var rect = row.getBoundingClientRect();
+    var vh   = window.innerHeight;
+
+    /* Phase 1 — expand: row enters viewport → row centre hits 40% from top  */
+    var p1Start = vh;
+    var p1End   = vh * 0.4;
+
+    /* Phase 2 — contract: row centre at 40% → row fully scrolled away       */
+    var p2End   = -(row.offsetHeight);
+
+    var pos = rect.top;
+    var flex;
+
+    if (pos >= p1Start) {
+      flex = 1;                                              /* not yet in view */
+    } else if (pos >= p1End) {
+      var t = (p1Start - pos) / (p1Start - p1End);
+      flex = 1 + t;                                         /* 1 → 2 (expand)  */
+    } else if (pos >= p2End) {
+      var t2 = (p1End - pos) / (p1End - p2End);
+      flex = 2 - t2;                                        /* 2 → 1 (shrink)  */
+    } else {
+      flex = 1;                                             /* scrolled past    */
+    }
+
+    red.style.flexGrow = flex;
+  }
+
+  window.addEventListener('scroll', update, {passive: true});
+  update();
+});
+</script>
+
+<!-- ── PAGE BODY PLACEHOLDERS ── -->
+<main style="max-width:1200px;margin:0 auto;padding:48px 40px;display:flex;flex-direction:column;gap:32px;">
+
+  <div style="height:320px;background:#e0e0e0;border-radius:4px;"></div>
+
+  <div id="colour-row" style="display:flex;gap:24px;">
+    <div id="shape-red"    style="flex-grow:1;flex-shrink:1;flex-basis:0%;height:240px;background:#e8322a;border-radius:4px;"></div>
+    <div id="shape-blue"   style="flex-grow:1;flex-shrink:1;flex-basis:0%;height:240px;background:#1a5bbd;border-radius:4px;"></div>
+    <div id="shape-yellow" style="flex-grow:1;flex-shrink:1;flex-basis:0%;height:240px;background:#f5c518;border-radius:4px;"></div>
+  </div>
+
+  <div style="height:200px;background:#e0e0e0;border-radius:4px;"></div>
+
+  <div style="display:grid;grid-template-columns:2fr 1fr;gap:24px;">
+    <div style="height:280px;background:#e0e0e0;border-radius:4px;"></div>
+    <div style="height:280px;background:#e0e0e0;border-radius:4px;"></div>
+  </div>
+
+  <div style="height:200px;background:#e0e0e0;border-radius:4px;"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+    <div style="height:220px;background:#e0e0e0;border-radius:4px;"></div>
+    <div style="height:220px;background:#e0e0e0;border-radius:4px;"></div>
+  </div>
+
+  <div style="height:320px;background:#e0e0e0;border-radius:4px;"></div>
+
+  <div style="height:180px;background:#e0e0e0;border-radius:4px;"></div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;">
+    <div style="height:260px;background:#e0e0e0;border-radius:4px;"></div>
+    <div style="height:260px;background:#e0e0e0;border-radius:4px;"></div>
+    <div style="height:260px;background:#e0e0e0;border-radius:4px;"></div>
+  </div>
+
+  <div style="height:300px;background:#e0e0e0;border-radius:4px;"></div>
+
+  <div style="height:510px;background:#e0e0e0;border-radius:4px;"></div>
+
+</main>
 </body>
 </html>
