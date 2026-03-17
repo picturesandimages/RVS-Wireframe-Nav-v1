@@ -178,6 +178,17 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 .footer-bottom{border-top:1px solid #2a2a2a;padding:18px 0;margin-top:0}
 .footer-bottom-copy{font-size:11px;color:#444}
 
+/* ── SEARCH ── */
+.nav-search{display:flex;align-items:center;position:relative;margin-right:6px;flex-shrink:0}
+.search-btn{display:flex;align-items:center;justify-content:center;width:34px;height:34px;background:none;border:1.5px solid transparent;border-radius:3px;cursor:pointer;color:#888;transition:color .15s,border-color .15s;padding:0;flex-shrink:0}
+.search-btn:hover,.search-btn.active{color:#111;border-color:#ddd}
+.search-btn svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.8}
+.search-expand{width:0;overflow:hidden;transition:width .25s cubic-bezier(.4,0,.2,1)}
+.search-expand.open{width:190px}
+.search-input{width:190px;height:34px;border:1.5px solid #ccc;border-radius:3px;padding:0 10px;font-size:12px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#111;background:#fff;outline:none;display:block}
+.search-input:focus{border-color:#111}
+@media(max-width:900px){.nav-search{display:none}}
+
 /* ── RESPONSIVE ── */
 @media(min-width:1200px){.nav-inner{padding-left:40px;padding-right:40px}.util-bar{padding:0 40px}}
 @media(max-width:1100px){.logo{margin-right:16px}.nav-trigger{padding:0 8px;font-size:12px}}
@@ -615,6 +626,14 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 
     </div><!-- /primary-links -->
 
+    <div class="nav-search">
+      <button class="search-btn" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 16 16"><circle cx="6.5" cy="6.5" r="4.5"/><line x1="10" y1="10" x2="14.5" y2="14.5"/></svg>
+      </button>
+      <div class="search-expand" id="searchExpand">
+        <input class="search-input" type="search" placeholder="Search…" id="searchInput">
+      </div>
+    </div>
     <div class="nav-ctas">
       <a href="#" class="btn btn-outline">Contact Us</a>
       <a href="#" class="btn btn-solid">Donate</a>
@@ -1000,7 +1019,19 @@ desktopItems.forEach(item => {
 });
 
 window.addEventListener('resize', () => { if (curD) positionMega(curD); });
-document.addEventListener('click', () => closeD(curD));
+document.addEventListener('click', () => { closeD(curD); searchExpand.classList.remove('open'); searchBtn.classList.remove('active'); });
+
+/* ── SEARCH ── */
+const searchBtn = document.getElementById('searchBtn');
+const searchExpand = document.getElementById('searchExpand');
+const searchInput = document.getElementById('searchInput');
+searchBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  const isOpen = searchExpand.classList.toggle('open');
+  searchBtn.classList.toggle('active', isOpen);
+  if (isOpen) { setTimeout(() => searchInput.focus(), 50); }
+});
+searchExpand.addEventListener('click', e => e.stopPropagation());
 
 /* ── MOBILE DRAWER ── */
 const hamburger = document.getElementById('hamburger');
