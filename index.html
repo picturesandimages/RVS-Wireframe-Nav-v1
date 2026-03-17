@@ -160,6 +160,24 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
 .mob-utils{padding:14px 20px 32px;border-top:1px solid #e0e0e0;display:flex;flex-direction:column}
 .mob-util-link{display:block;padding:10px 0;font-size:13px;color:#888;text-decoration:none;border-bottom:1px solid #f0f0f0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}
 
+/* ── FOOTER ── */
+.site-footer{background:#1e1e1e;color:#aaa;padding:56px 40px 0}
+.footer-inner{max-width:1160px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:40px;padding-bottom:48px}
+.footer-col-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:14px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:9px}
+.footer-links a{color:#777;font-size:12px;text-decoration:none;transition:color .15s}
+.footer-links a:hover{color:#fff}
+.footer-newsletter-desc{font-size:12px;color:#555;line-height:1.6;margin-bottom:12px}
+.footer-signup-row{display:flex;gap:8px}
+.footer-signup-input{flex:1;height:38px;background:#2e2e2e;border:1px solid #3a3a3a;border-radius:2px;padding:0 12px;font-size:12px;color:#fff;font-family:inherit;outline:none}
+.footer-signup-input::placeholder{color:#555}
+.footer-signup-input:focus{border-color:#777}
+.footer-signup-btn{height:38px;padding:0 16px;background:#fff;color:#111;font-family:inherit;font-size:12px;font-weight:600;border:none;border-radius:2px;cursor:pointer;white-space:nowrap;transition:background .15s}
+.footer-signup-btn:hover{background:#e0e0e0}
+.footer-bottom{border-top:1px solid #2a2a2a;padding:18px 0;margin-top:0}
+.footer-bottom-copy{font-size:11px;color:#444}
+
 /* ── RESPONSIVE ── */
 @media(min-width:1200px){.nav-inner{padding-left:40px;padding-right:40px}.util-bar{padding:0 40px}}
 @media(max-width:1100px){.logo{margin-right:16px}.nav-trigger{padding:0 8px;font-size:12px}}
@@ -593,48 +611,7 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
         </div>
       </div>
 
-      <!-- UTILITY AND LEGAL -->
-      <div class="nav-item" data-menu="utility">
-        <button class="nav-trigger">Utility and Legal<svg class="chev" viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-        <div class="mega-menu wide">
-          <div class="mega-inner">
-            <div class="mega-sidebar">
-              <div class="mega-sidebar-label">Legal &amp; Contact</div>
-              <button class="sidebar-link active-sub" data-sub="u-contact"><span>Contact Us</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-              <button class="sidebar-link" data-sub="u-policies"><span>Policies and Privacy</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-              <button class="sidebar-link" data-sub="u-terms"><span>Website Terms</span><svg viewBox="0 0 12 12"><polyline points="4,2 8,6 4,10"/></svg></button>
-            </div>
-            <div class="mega-content">
-              <div class="mega-section vis" id="u-contact">
-                <div class="col-label">Contact Us</div>
-                <a href="#" class="sub-link"><strong>Contact Hub</strong></a>
-                <a href="#" class="sub-link"><strong>General Enquiry Form</strong></a>
-                <a href="#" class="sub-link"><strong>Data Protection Enquiry</strong></a>
-                <a href="#" class="sub-link"><strong>Website Enquiry</strong></a>
-                <a href="#" class="sub-link"><strong>Caldicott Guardian Enquiry</strong></a>
-                <a href="#" class="sub-link"><strong>Newsletter Sign-Up</strong></a>
-              </div>
-              <div class="mega-section" id="u-policies">
-                <div class="col-label">Policies and Privacy</div>
-                <a href="#" class="sub-link"><strong>Privacy Notices ×5</strong></a>
-                <a href="#" class="sub-link"><strong>Cookie Notice</strong></a>
-                <a href="#" class="sub-link"><strong>Data Protection</strong></a>
-                <a href="#" class="sub-link"><strong>Safeguarding Policy</strong></a>
-                <a href="#" class="sub-link"><strong>Complaints and Comments</strong></a>
-                <a href="#" class="sub-link"><strong>Welsh Language Standards</strong></a>
-                <a href="#" class="sub-link"><strong>Modern Slavery Statement</strong></a>
-              </div>
-              <div class="mega-section" id="u-terms">
-                <div class="col-label">Website Terms</div>
-                <a href="#" class="sub-link"><strong>Website Terms and Acceptable Use</strong></a>
-                <a href="#" class="sub-link"><strong>Virtual Village Hall Terms</strong></a>
-                <a href="#" class="sub-link"><strong>Image Licence Agreement</strong></a>
-                <a href="#" class="sub-link"><strong>Sitemap</strong></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
     </div><!-- /primary-links -->
 
@@ -942,47 +919,6 @@ nav.main-nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px
       </div>
     </li>
 
-    <!-- L1: UTILITY AND LEGAL -->
-    <li class="mob-item">
-      <button class="mob-trigger"><span>Utility and Legal</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-      <div class="mob-panel">
-        <ul style="list-style:none">
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Contact Us</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">Contact Hub</a>
-              <a href="#" class="mob-l3-link">General Enquiry Form</a>
-              <a href="#" class="mob-l3-link">Data Protection Enquiry</a>
-              <a href="#" class="mob-l3-link">Website Enquiry</a>
-              <a href="#" class="mob-l3-link">Caldicott Guardian Enquiry</a>
-              <a href="#" class="mob-l3-link">Newsletter Sign-Up</a>
-            </div>
-          </li>
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Policies and Privacy</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">Privacy Notices ×5</a>
-              <a href="#" class="mob-l3-link">Cookie Notice</a>
-              <a href="#" class="mob-l3-link">Data Protection</a>
-              <a href="#" class="mob-l3-link">Safeguarding Policy</a>
-              <a href="#" class="mob-l3-link">Complaints and Comments</a>
-              <a href="#" class="mob-l3-link">Welsh Language Standards</a>
-              <a href="#" class="mob-l3-link">Modern Slavery Statement</a>
-            </div>
-          </li>
-          <li class="mob-l2-item">
-            <button class="mob-l2-trigger"><span>Website Terms</span><svg viewBox="0 0 12 12"><polyline points="2,4 6,8 10,4"/></svg></button>
-            <div class="mob-l2-panel">
-              <a href="#" class="mob-l3-link">Website Terms and Acceptable Use</a>
-              <a href="#" class="mob-l3-link">Virtual Village Hall Terms</a>
-              <a href="#" class="mob-l3-link">Image Licence Agreement</a>
-              <a href="#" class="mob-l3-link">Sitemap</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </li>
-
   </ul>
 
   <div class="mob-utils">
@@ -1120,86 +1056,53 @@ document.querySelectorAll('.mob-l2-trigger').forEach(t => {
 });
 </script>
 
-<script>
-/* ── COLOUR ROW SCROLL ANIMATION ── */
-document.addEventListener('DOMContentLoaded', function(){
-  var row = document.getElementById('colour-row');
-  var red = document.getElementById('shape-red');
-  if (!row || !red) return;
-
-  function update(){
-    var rect = row.getBoundingClientRect();
-    var vh   = window.innerHeight;
-
-    /* Phase 1 — expand: row enters viewport → row centre hits 40% from top  */
-    var p1Start = vh;
-    var p1End   = vh * 0.4;
-
-    /* Phase 2 — contract: row centre at 40% → row fully scrolled away       */
-    var p2End   = -(row.offsetHeight);
-
-    var pos = rect.top;
-    var flex;
-
-    if (pos >= p1Start) {
-      flex = 1;                                              /* not yet in view */
-    } else if (pos >= p1End) {
-      var t = (p1Start - pos) / (p1Start - p1End);
-      flex = 1 + t;                                         /* 1 → 2 (expand)  */
-    } else if (pos >= p2End) {
-      var t2 = (p1End - pos) / (p1End - p2End);
-      flex = 2 - t2;                                        /* 2 → 1 (shrink)  */
-    } else {
-      flex = 1;                                             /* scrolled past    */
-    }
-
-    red.style.flexGrow = flex;
-  }
-
-  window.addEventListener('scroll', update, {passive: true});
-  update();
-});
-</script>
-
-<!-- ── PAGE BODY PLACEHOLDERS ── -->
-<main style="max-width:1200px;margin:0 auto;padding:48px 40px;display:flex;flex-direction:column;gap:32px;">
-
-  <div style="height:320px;background:#e0e0e0;border-radius:4px;"></div>
-
-  <div id="colour-row" style="display:flex;gap:24px;">
-    <div id="shape-red"    style="flex-grow:1;flex-shrink:1;flex-basis:0%;height:240px;background:#e8322a;border-radius:4px;"></div>
-    <div id="shape-blue"   style="flex-grow:1;flex-shrink:1;flex-basis:0%;height:240px;background:#1a5bbd;border-radius:4px;"></div>
-    <div id="shape-yellow" style="flex-grow:1;flex-shrink:1;flex-basis:0%;height:240px;background:#f5c518;border-radius:4px;"></div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-col-label">Contact Us</div>
+        <ul class="footer-links">
+          <li><a href="#">Contact Hub</a></li>
+          <li><a href="#">General Enquiry Form</a></li>
+          <li><a href="#">Data Protection Enquiry</a></li>
+          <li><a href="#">Website Enquiry</a></li>
+          <li><a href="#">Caldicott Guardian Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-label">Policies &amp; Privacy</div>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Notices</a></li>
+          <li><a href="#">Cookie Notice</a></li>
+          <li><a href="#">Data Protection</a></li>
+          <li><a href="#">Safeguarding Policy</a></li>
+          <li><a href="#">Complaints and Comments</a></li>
+          <li><a href="#">Welsh Language Standards</a></li>
+          <li><a href="#">Modern Slavery Statement</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-label">Website Terms</div>
+        <ul class="footer-links">
+          <li><a href="#">Website Terms and Acceptable Use</a></li>
+          <li><a href="#">Virtual Village Hall Terms</a></li>
+          <li><a href="#">Image Licence Agreement</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-label">Newsletter Sign-Up</div>
+        <p class="footer-newsletter-desc">Stay up to date with news and stories from Royal Voluntary Service.</p>
+        <div class="footer-signup-row">
+          <input class="footer-signup-input" type="email" placeholder="Your email address">
+          <button class="footer-signup-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom-copy">&copy; Royal Voluntary Service. Registered Charity No. 1015988 (England &amp; Wales) SC038924 (Scotland).</span>
+    </div>
   </div>
-
-  <div style="height:200px;background:#e0e0e0;border-radius:4px;"></div>
-
-  <div style="display:grid;grid-template-columns:2fr 1fr;gap:24px;">
-    <div style="height:280px;background:#e0e0e0;border-radius:4px;"></div>
-    <div style="height:280px;background:#e0e0e0;border-radius:4px;"></div>
-  </div>
-
-  <div style="height:200px;background:#e0e0e0;border-radius:4px;"></div>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-    <div style="height:220px;background:#e0e0e0;border-radius:4px;"></div>
-    <div style="height:220px;background:#e0e0e0;border-radius:4px;"></div>
-  </div>
-
-  <div style="height:320px;background:#e0e0e0;border-radius:4px;"></div>
-
-  <div style="height:180px;background:#e0e0e0;border-radius:4px;"></div>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;">
-    <div style="height:260px;background:#e0e0e0;border-radius:4px;"></div>
-    <div style="height:260px;background:#e0e0e0;border-radius:4px;"></div>
-    <div style="height:260px;background:#e0e0e0;border-radius:4px;"></div>
-  </div>
-
-  <div style="height:300px;background:#e0e0e0;border-radius:4px;"></div>
-
-  <div style="height:510px;background:#e0e0e0;border-radius:4px;"></div>
-
-</main>
+</footer>
 </body>
 </html>
